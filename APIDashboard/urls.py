@@ -20,5 +20,6 @@ from django.urls import path, include # type: ignore
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("",include('home.urls'))
+    path("",include('home.urls')),
+    path("api/auth/",include('auth.urls'))
 ]
